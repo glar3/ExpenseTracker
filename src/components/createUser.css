@@ -1,0 +1,61 @@
+/* Container for user creation */
+.createUserContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Input field styling */
+.createUserContainer input[type="text"],
+.createUserContainer input[type="number"] {
+  width: calc(100% - 22px); /* Adjust width to account for padding and border */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.createUser {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff67;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createUser:hover {
+  background-color: #007bff34;
+}
+
+.createdUserPrompt {
+  font-size: 16px;
+  color: rgb(97, 184, 97);
+}
+
+.createdUserPrompt.error {
+  color: rgb(184, 97, 97);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .createUserContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .createUserContainer input[type="text"],
+  .createUserContainer input[type="number"] {
+    width: 100%;
+  }
+}

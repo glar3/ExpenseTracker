@@ -1,0 +1,108 @@
+h1.usernameBefore {
+  font-size: 28px;
+  color: #343a40;
+  display: flex;
+  gap: 5px;
+}
+
+h1 > .username {
+  font-size: 28px;
+  color: #007bff67;
+  margin: 0;
+}
+
+/* Container for user dashboard data */
+.userDashboardData {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* User container styling */
+.userContainer {
+  padding: 10px;
+}
+
+/* Balance styling */
+.balance {
+  font-size: 24px;
+  color: #007bff67;
+}
+
+#goToAddFunds {
+  text-align: center;
+}
+
+.addFunds {
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff67;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff67;
+  border-radius: 5px;
+  width: 200px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for links */
+.addFunds:hover {
+  background-color: #007bff67;
+  color: #ffffff;
+}
+
+/* Container for add funds functionality */
+.addFundsContainer {
+  display: none; /* Initially hidden; can be toggled via JavaScript */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styling */
+.addFundsTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Input field styling */
+.addFundsContainer input[type="number"] {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .userDashboardData {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .addFundsContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .addFundsContainer input[type="text"] {
+    width: 100%;
+  }
+}

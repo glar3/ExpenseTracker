@@ -1,0 +1,62 @@
+/* General styles for the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Container for the login elements */
+.loginContainer {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Input field styles */
+.usernameInput {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.login {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff67;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login:hover {
+  background-color: #007bff34;
+}
+
+/* Error message styles */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .loginContainer {
+    width: 90%;
+    padding: 20px;
+  }
+}

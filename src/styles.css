@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-family: Poppins;
+}
+
+/* General styles for the page */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  gap: 20px;
+}
+
+/* Container for the links */
+a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff67;
+  padding: 15px 30px;
+  border: 2px solid #007bff67;
+  border-radius: 5px;
+  width: 200px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for links */
+a:hover {
+  background-color: #007bff67;
+  color: #ffffff;
+}
+
+/* Ensures the last link doesn't have extra margin */
+a:last-child {
+  margin-bottom: 0;
+}
+
+.home {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #343a40;
+}
